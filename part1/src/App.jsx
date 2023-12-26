@@ -1,25 +1,47 @@
 const App = () => {
-  const course = 'Half Stack application development';
-  const part1 = 'Fundamentals of React';
-  const exercises1 = 10;
-  const part2 = 'Using props to pass data';
-  const exercises2 = 7;
-  const part3 = 'State of a component';
-  const exercises3 = 14;
+  const Course = () => {
+    return <h1>Half Stack application development</h1>;
+  };
+  const Part1 = () => {
+    return (
+      <>
+        <p>Fundamentals of React</p>
+        <p>10</p>
+      </>
+    );
+  };
+
+  const Part2 = () => {
+    return (
+      <>
+        <p>Using props to pass data</p>
+        <p>7</p>
+      </>
+    );
+  };
+
+  const Part3 = () => {
+    return (
+      <>
+        <p>State of a component</p>
+        <p>13</p>
+      </>
+    );
+  };
 
   return (
     <div>
-      <h1>{course}</h1>
+      <Course />
       <p>
-        {part1} {exercises1}
+        <Part1 />
       </p>
       <p>
-        {part2} {exercises2}
+        <Part2 />
       </p>
       <p>
-        {part3} {exercises3}
+        <Part3 />
       </p>
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+      <p></p>
     </div>
   );
 };
